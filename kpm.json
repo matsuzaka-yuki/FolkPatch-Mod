@@ -28,5 +28,17 @@
     "version": "v1.0",
     "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/kpm/critical_partition_protect_1.0.kpm",
     "description": "警告:不要嵌入这个模块去使用,请使用临时加载去使用,不然导致手机不开机!作用:直接拦截对关键分区的读写操作，防止被恶意修改，有效防止系统被篡改格机,注意无法防止刷模块导致的格机"
+  },
+  {
+    "name": "re_kernel",
+    "version": "v7.0.1.3",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/kpm/re_kernel_7.0.1.3.kpm",
+    "description": "适配NoAcive墓碑的底层内核补丁"
+  },
+   {
+    "name": "re_kernel_network",
+    "version": "v7.0.1.3",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/kpm/re_kernel_7.0.1_network.kpm",
+    "description": "适配Freezer墓碑的底层内核补丁"
   }
 ]
