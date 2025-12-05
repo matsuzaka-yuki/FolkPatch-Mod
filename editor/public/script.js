@@ -48,6 +48,8 @@ async function loadFileContent(filename) {
     }
 }
 
+let sortableInstance = null;
+
 // 渲染列表
 function renderList() {
     contentArea.innerHTML = '';
@@ -60,7 +62,9 @@ function renderList() {
     currentData.forEach((item, index) => {
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.index = index; // 存储原始索引
         card.innerHTML = `
+            <div class="drag-handle">☰</div>
             <h3>${escapeHtml(item.name || '未命名')}</h3>
             <span class="version">${escapeHtml(item.version || 'v0.0.0')}</span>
             <div class="description">${escapeHtml(item.description || '暂无描述')}</div>
@@ -72,10 +76,44 @@ function renderList() {
         `;
         contentArea.appendChild(card);
     });
+
+    // 初始化或更新 Sortable
+    if (sortableInstance) {
+        sortableInstance.destroy();
+    }
+    
+    sortableInstance = new Sortable(contentArea, {
+        animation: 150,
+        handle: '.drag-handle',
+        ghostClass: 'sortable-ghost',
+        onEnd: async function (evt) {
+            // 移动数据
+            const item = currentData.splice(evt.oldIndex, 1)[0];
+            currentData.splice(evt.newIndex, 0, item);
+            
+            // 保存但不重新渲染（避免闪烁），只更新按钮的索引
+            // 或者简单点，直接保存并重新渲染
+            await saveData(false); // false 表示保存后不强制重绘列表，因为 DOM 已经更新了
+            
+            // 更新所有卡片内的按钮索引，防止后续操作错乱
+            updateCardIndices();
+        }
+    });
+}
+
+function updateCardIndices() {
+    const cards = contentArea.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        card.dataset.index = index;
+        const editBtn = card.querySelector('.edit-btn');
+        const deleteBtn = card.querySelector('.danger-btn');
+        if (editBtn) editBtn.setAttribute('onclick', `openEditModal(${index})`);
+        if (deleteBtn) deleteBtn.setAttribute('onclick', `deleteItem(${index})`);
+    });
 }
 
 // 保存数据到服务器
-async function saveData() {
+async function saveData(shouldRender = true) {
     if (!currentFile) return;
     
     try {
@@ -89,7 +127,7 @@ async function saveData() {
 
         if (response.ok) {
             showToast('保存成功');
-            renderList();
+            if (shouldRender) renderList();
         } else {
             throw new Error('Save failed');
         }

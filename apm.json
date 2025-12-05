@@ -36,16 +36,16 @@
     "description": "基于Zygisk的Xposed Hook管理器,轻松使用各种XP模块"
   },
   {
+    "name": "LSPosed",
+    "version": "v1.9.2-it-7438",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/LSPosed-v1.9.2-it-7438-release.zip",
+    "description": "基于Zygisk的xp框架(官方版本)"
+  },
+  {
     "name": "帝(DI)",
     "version": "1.0",
     "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/xc/DI.zip",
     "description": "黑厂专用！主模块与所有第三方线程，温控，触控模块冲突！"
-  },
-  {
-    "name": "骁龙8Elite日用线程优化R2",
-    "version": "1.0-r2",
-    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/xc/8Elite.R2.zip",
-    "description": "为骁龙8Elite优化日常线程，提高性能，降低功耗"
   },
   {
     "name": "NeoBattery",
@@ -54,9 +54,9 @@
     "description": "🔋电池效率✙✙✙，增加电池使用效率，降低日常使用功耗，不损耗性能。可通过执行按钮启用LIFE模式：降低最大CPU频率 牺牲部分性能换取更长续航"
   },
   {
-    "name": "LSPosed",
-    "version": "v1.9.2-it-7438",
-    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/LSPosed-v1.9.2-it-7438-release.zip",
-    "description": "基于Zygisk的xp框架(官方版本)"
+    "name": "骁龙8Elite日用线程优化R2",
+    "version": "1.0-r2",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/xc/8Elite.R2.zip",
+    "description": "为骁龙8Elite优化日常线程，提高性能，降低功耗"
   }
 ]
