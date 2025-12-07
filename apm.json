@@ -31,12 +31,6 @@
   },
   {
     "name": "LSPosed",
-    "version": "1.9.2-lrena-去日志版",
-    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/LSPosed-v1.9.2-7280-Irena-.zip",
-    "description": "基于Zygisk的Xposed Hook管理器,轻松使用各种XP模块"
-  },
-  {
-    "name": "LSPosed",
     "version": "v1.9.2-it-7438",
     "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/LSPosed-v1.9.2-it-7438-release.zip",
     "description": "基于Zygisk的xp框架(官方版本)"
@@ -58,5 +52,29 @@
     "version": "1.0-r2",
     "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/xc/8Elite.R2.zip",
     "description": "为骁龙8Elite优化日常线程，提高性能，降低功耗"
+  },
+  {
+    "name": "BCR-通话录音",
+    "version": "1.87",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/func/BCR-1.87-release.zip",
+    "description": "BCR是一款适用于已获取root权限或运行第三方系统的设备的简易安卓通话录音应用。启用后，它会在后台自动录制所有来电和去电，全程不干扰用户操作。(需在应用BCR中配置)\n\n"
+  },
+  {
+    "name": "LSPosed_Irena",
+    "version": "1.9.2-7291",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/LSPosed-v1.9.2-7291-Irena-release.zip",
+    "description": "原LSP开发者之一的fork, 适用于A8.1-A16, 若没有官方lsposed it, 推荐使用这个版本."
+  },
+  {
+    "name": "Scene_systemless",
+    "version": "v1.2.1",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/func/Scene_systemless.zip",
+    "description": "Scene的辅助模块, 使用Scene部分功能时可免于直接操作系统文件"
+  },
+  {
+    "name": "Play Integrity Fork",
+    "version": "v15",
+    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/zygisk/PlayIntegrityFork-v15.zip",
+    "description": "一个 Zygisk 模块，用于修复 Android 13 之前的设备在 Play Integrity API 的 “deviceRecognitionVerdict” 中出现的 “MEETS_DEVICE_INTEGRITY” 问题。在 Android 13 及以上版本的 ROM 中，该模块仍有助于通过 Google Wallet 和 Google Messages RCS 支持的验证检查。"
   }
 ]
