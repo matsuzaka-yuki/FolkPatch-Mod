@@ -106,5 +106,17 @@
     "version":"v7.3.0-rc2",
     "url":"https://github.com/zhuzhuzihan/FolkPatch-Mod/releases/download/module/Yamabukiko-v7.3.0-79-c6528d1-rc2.zip",
     "description":"此模块用于root之后环境的隐藏，帮助受歧视的root用户通过一些软件的检测。"
+  },
+  {
+    "name":"天玑GPU调速器",
+    "version":"v2.11.0",
+    "url":"https://github.com/Seyud/Mediatek_Mali_GPU_Governor/releases/download/v2.11.0/Mediatek_Mali_GPU_Governor_v2.11.0.zip",
+    "description":"适用于Mediatek_Mali_GPU的GPU动态调速器，优化高负载场景下的功耗与性能平衡"
+  },
+  {
+    "name":"Device Faker",
+    "version":"v1.1.0",
+    "url":"https://github.com/Seyud/device_faker/releases/download/v1.1.0/device_faker_v1.1.0.zip",
+    "description":"使用Zygisk实现自定义配置对应用伪装机型"
   }
 ]
