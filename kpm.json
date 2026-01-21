@@ -6,12 +6,6 @@
     "description": "一个必备的环境隐藏KPM模块"
   },
   {
-    "name": "CherishPeekaboo",
-    "version": "1.5.5",
-    "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/kpm/CherishPeekaboo.kpm",
-    "description": "一个必备的环境隐藏KPM模块"
-  },
-  {
     "name": "kpm_audit_patch",
     "version": "v0.0.2",
     "url": "https://github.com/matsuzaka-yuki/FolkPatch-Mod/releases/download/kpm/kpm_audit_patch.kpm",
